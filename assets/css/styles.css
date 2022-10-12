@@ -386,6 +386,13 @@ a:focus {
 .technologies .list-inline-item:last-child {
   margin-right: 0;
 }
+.technologies .new-item {
+  width: 60px;
+}
+.technologies .new-item img {
+  width: 60px;
+  height: 60px;
+}
 
 .testimonials {
   background: #40babd;
