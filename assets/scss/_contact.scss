@@ -11,11 +11,32 @@
         font-weight:300;
         margin-bottom: 30px;
     }
-
+    .container-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        .contact-info {
+            padding-bottom: 3.5rem;
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+        #contact-form {
+            label {
+                font-size: 18px;
+                font-weight: bold;
+                padding-bottom: 5px;
+                padding-top: 5px;
+            }
+            .btn-send {
+                font-size: 20px;
+            }
+        }
+    }
 }
 
-// .contact-content {
-//     margin: 0 auto;
-//     margin-bottom: 60px;
-// }
 

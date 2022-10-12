@@ -695,7 +695,6 @@ a:focus {
   background-clip: padding-box;
 }
 .team-section .members-wrapper {
-  max-width: 800px;
   margin: 0 auto;
 }
 .team-section .item-inner {
@@ -802,6 +801,30 @@ a:focus {
   font-weight: 300;
   margin-bottom: 30px;
 }
+.contact-section .container-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.contact-section .container-principal .contact-info {
+  padding-bottom: 3.5rem;
+}
+.contact-section .container-principal .contact-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-section .container-principal #contact-form label {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.contact-section .container-principal #contact-form .btn-send {
+  font-size: 20px;
+}
 
 @media (max-width: 767.98px) {
   .navbar-collapse {
@@ -877,6 +900,9 @@ a:focus {
   }
   .testimonials-section .item.item-reversed .quote {
     margin-right: 85px;
+  }
+  .contact-section .container-principal .contact-info {
+    padding-bottom: 0;
   }
 }
 @media (min-width: 768px) {
