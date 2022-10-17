@@ -17,6 +17,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- FontAwesome JS-->
     <script defer src="assets/fontawesome/js/all.min.js"></script>
     <!-- Global CSS -->
@@ -93,18 +94,17 @@
     <!--//header-->
 
     <div id="hero" class="hero-section">
-        <div class="hero-content">
-            <h2 class="heading">
-              Nearshore made easy, the best people 
-                <br class="d-none d-md-block" />for your development needs
-            </h2>
-            <p class="intro">
-                It helps you to build a beautiful and effective landing page
-                to promote your product or side project!
-            </p>
-            <a class="btn btn-primary btn-cta"
-                href="#contact">Contact Us</a>
-        </div>
+      <div class="hero-content">
+        <h2 class="heading">
+          Nearshore made easy, the best people
+          <br class="d-none d-md-block" />for your development needs
+        </h2>
+        <p class="intro">
+          It helps you to build a beautiful and effective landing page to
+          promote your product or side project!
+        </p>
+        <a class="btn btn-primary btn-cta" href="#contact">Contact Us</a>
+      </div>
     </div>
     <!--//hero-->
 
@@ -112,7 +112,9 @@
       <div class="container text-center">
         <h2 class="section-title">Why Choose Neartalent?</h2>
         <p class="intro">
-          Neartalent developers use modern web technologies and can provide your company with innovative solutions and expertise to bring to life or power-up your projects
+          Neartalent developers use modern web technologies and can provide your
+          company with innovative solutions and expertise to bring to life or
+          power-up your projects
         </p>
         <ul class="technologies list-inline">
           <li class="list-inline-item px-1">
@@ -346,7 +348,8 @@
         <h2 class="section-title">Our Team</h2>
         <div class="story">
           <p>
-            Some of our team members. People passionate about developing. Feel free to reach out for them in their social networks.
+            Some of our team members. People passionate about developing. Feel
+            free to reach out for them in their social networks.
           </p>
         </div>
         <div class="members-wrapper row">
@@ -445,7 +448,7 @@
                 </div>
                 <!--//member-desc-->
               </div>
-              
+
               <!--//member-content-->
             </div>
             <!--//item-inner-->
@@ -467,12 +470,18 @@
                 <div class="member-title">Full-Stack Developer</div>
                 <ul class="social list-inline">
                   <li class="list-inline-item">
-                    <a class="linkedin" href="https://www.linkedin.com/in/matias-salinas-001/" target="_blank"
+                    <a
+                      class="linkedin"
+                      href="https://www.linkedin.com/in/matias-salinas-001/"
+                      target="_blank"
                       ><i class="fa-brands fa-linkedin-in"></i
                     ></a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="github" href="https://github.com/Ms2502" target="_blank"
+                    <a
+                      class="github"
+                      href="https://github.com/Ms2502"
+                      target="_blank"
                       ><i class="fab fa-github"></i
                     ></a>
                   </li>
@@ -629,110 +638,147 @@
     </div>
     <!--//pricing-section-->
     <div id="contact" class="contact-section">
-        <div class="text-center">
-            <h2 class="section-title">Contact Us</h2>
-            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
-            <div class="container-principal">
-                <div class="container-forn">
-                    <form id="contact-form" name="contact-form" method="POST">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="name" name="name" class="form-control">
-                                    <label for="name" class="">Your name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" class="form-control">
-                                    <label for="email" class="">Your email</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                    <label for="subject" class="">Subject</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                    <label for="message">Your message</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center text-md-left">
-                          <a class="btn btn-primary btn-send" onclick="">Send</a>
-                        </div>
-                    </form>
-                    <div class="status"></div>
+      <div class="text-center">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="text-center w-responsive mx-auto mb-5">
+          Do you have any questions? Please do not hesitate to contact us
+          directly. Our team will come back to you within a matter of hours to
+          help you.
+        </p>
+        <div class="container-principal">
+          <div class="container-form">
+            <form id="contact-form" name="contact-form" method="POST">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <label for="from_name" class="">Your name</label>
+                    <input
+                      type="text"
+                      id="from_name"
+                      name="from_name"
+                      class="form-control"
+                    />
+                  </div>
                 </div>
-                <div class="contact-info">
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p class="m-0">CABA, Buenos Aires, CA 1499, Argentina</p>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope fa-2x"></i>
-                            <p class="m-0">contact@neartalent.ar</p>
-                        </li>
-                    </ul>
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <label for="client_email" class="">Your email</label>
+                    <input
+                      type="text"
+                      id="client_email"
+                      name="client_email"
+                      class="form-control"
+                    />
+                  </div>
                 </div>
-            </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form">
+                    <label for="message">Your message</label>
+                    <input
+                      type="text"
+                      id="message"
+                      name="message"
+                      rows="2"
+                      class="form-control md-textarea"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="text-center text-md-left">
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6LcFJ4siAAAAAI8cT8CzL44CwHpx6VsXVII5Fl1w"
+                ></div>
+                <br />
+                <input
+                  class="btn btn-primary btn-send"
+                  type="submit"
+                  id="button"
+                  value="Send Email"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="contact-info">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <p class="m-0">Argentina</p>
+              </li>
+              <li>
+                <i class="fas fa-envelope fa-2x"></i>
+                <p class="m-0">contact@neartalent.ar</p>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Footer -->
-<footer class=" footer text-center text-lg-start bg-light text-muted">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <!-- Left -->
+    <footer class="footer text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
 
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  
-  <!-- Copyright -->
-  <div class="text-center p-4 bg-dark bg-gradient  text-white">© 2021 Copyright : <a class="text-reset fw-bold" href="https://neartalent.ar/">Neartalent.ar</a>
-    <br>
-    <small class="copyright">Designed with <span class="sr-only">love</span><i class="fa-solid fa-heart"></i> by neartalent</small>
-  </div>
-  <!-- Copyright -->
-</footer>
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
 
+      <!-- Copyright -->
+      <div class="text-center p-4 bg-dark bg-gradient text-white">
+        © 2021 Copyright :
+        <a class="text-reset fw-bold" href="https://neartalent.ar/"
+          >Neartalent.ar</a
+        >
+        <br />
+        <small class="copyright"
+          >Designed with <span class="sr-only">love</span
+          ><i class="fa-solid fa-heart"></i> by neartalent</small
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
 
     <!-- Javascript -->
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./assets/js/sendMail.js"></script>
+    <script type="text/javascript">
+      emailjs.init('user_uxSBgp47fOtfj5HMBjzl5');
+    </script>
   </body>
 </html>
